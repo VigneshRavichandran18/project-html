@@ -1,0 +1,82 @@
+.head{
+    height: 125px;
+  width: 125px;
+  background-color: #555;
+  border-radius: 50px 50px 0 0;
+  top: 0;
+    left: 25px;
+    animation: head-bob 1s infinite;
+}
+.shape{
+  display: flex;
+  justify-content: space-evenly;
+}
+.body{
+  border-radius: 50px 50px 50px 50px;
+  height: 150px;
+  width: 100px;
+  background-color: palevioletred;
+  left: -30px;
+  animation: body-dance 1s infinite;
+  
+}
+.righthand{
+  border-radius: 50px 50px 50px 50px;
+  height: 100px;
+  width: 25px;
+  background-color: #555;
+ margin-left: 550px;
+ left: -30px;
+    animation: arm-wave 2s infinite;
+}
+.lefthand{
+  border-radius: 50px 50px 50px 50px;
+  height: 100px;
+  width: 25px;
+  background-color: #555;
+  margin-right: 550px;
+  left: -30px;
+    animation: arm-wave 2s infinite;
+}
+.legs{
+  
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.rightleg{
+  border-radius: 50px 50px 50px 50px;
+  height: 150px;
+  width: 25px;
+  background-color: #555;
+ margin-left: 550px;
+ right: 10px;
+ animation: leg-dance 2s infinite reverse;
+}
+.leftleg{
+  border-radius: 50px 50px 50px 50px;
+  height: 150px;
+  width: 25px;
+  background-color: #555;
+  margin-right: 550px;
+  left: 10px;
+    animation: leg-dance 2s infinite;
+}
+@keyframes head-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes arm-wave {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(30deg); }
+}
+
+@keyframes leg-dance {
+  0%, 100% { transform: rotate(0deg); }
+  50% { transform: rotate(15deg); }
+}
+@keyframes body-dance{
+  from{ transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
